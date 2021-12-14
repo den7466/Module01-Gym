@@ -11,6 +11,7 @@ header {
     height: 31px;
     margin: 0 auto;
     padding-top: 49px;
+    padding-bottom: 27px;
 }
 
 .header-logo {
@@ -96,5 +97,99 @@ header {
 }
 
 .header-social .btn-facebook:hover {
+    transform: scale(1.2);
+}
+
+.banner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner-box {
+    max-width: 1143px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 228px;
+    padding-bottom: 239px;
+}
+
+.banner-description {
+    max-width: 676px;
+}
+
+.banner-bg {
+    display: block;
+    width: 996px;
+    height: 852px;
+    position: absolute;
+    top: 0px;
+    right: -185px;
+    z-index: -1;
+}
+
+.banner-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #2B3541;
+    margin: 0;
+}
+
+.banner-count {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+    color: #2B3541;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.banner-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #2B3541;
+    margin: 20px 0 0 94px;
+    display: block;
+    max-width: 297px;
+}
+
+.banner-link {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #2B3541;
+    padding: 20px 30px;
+    background: #FBF138;
+    display: inline-block;
+    margin-left: 94px;
+    margin-top: 40px;
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+    transition: .3s;
+}
+
+.banner-link:hover {
+    background: #2B3541;
+    color: #FBF138;
+    box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.2);
+}
+
+.banner-arrow {
+    background-image: url(../images/icons/Arrow.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 52px;
+    height: 52px;
+    display: block;
+    position: absolute;
+    left: 94px;
+    top: 790px;
+    transition: .3s;
+}
+
+.banner-arrow:hover {
     transform: scale(1.2);
 }
