@@ -193,3 +193,78 @@ header {
 .banner-arrow:hover {
     transform: scale(1.2);
 }
+
+.events {
+    max-width: 1143px;
+    margin: 160px auto;
+}
+
+.events-title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    color: #2B3541;
+    margin-bottom: 40px;
+}
+
+.events-item-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 600px;
+    gap: 20px;
+}
+
+.events-item-maraphon {
+    background-image: url(../images/@2x/maraphon@2x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    position: relative;
+}
+
+.events-item-vebinar1 {
+    background-image: url(../images/@2x/vebinar1@2x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    position: relative;
+}
+
+.events-item-vebinar2 {
+    background-image: url(../images/@2x/vebinar2@2x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    position: relative;
+}
+
+.events-item-time {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2B3541;
+    line-height: 27px;
+    margin: 0;
+    padding: 30px 30px 10px 30px;
+}
+
+.events-item-text {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 35px;
+    color: #2B3541;
+    margin: 0;
+    padding: 10px 30px;
+}
+
+.events-item-link {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    padding: 10px 20px;
+    background: #FBF138;
+    text-decoration: none;
+    color: #2B3541;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
