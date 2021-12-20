@@ -620,12 +620,12 @@ footer {
     z-index: -1;
 }
 
-.footer-box-links .social > .btn-instagram {
+.footer-box-links .social > button > .btn-instagram {
     width: 27px;
     height: 27px;
 }
 
-.footer-box-links .social > .btn-facebook {
+.footer-box-links .social > button > .btn-facebook {
     width: 27px;
     height: 27px;
 }
