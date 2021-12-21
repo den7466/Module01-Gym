@@ -133,6 +133,7 @@ header {
     line-height: 60px;
     text-transform: uppercase;
     color: #2B3541;
+    letter-spacing: .03em;
     margin: 0;
 }
 
@@ -215,7 +216,7 @@ header {
 }
 
 .events-item-maraphon {
-    background-image: url(../images/@2x/maraphon@2x.png);
+    background: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%), url(../images/@2x/maraphon@2x.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 600px;
@@ -245,6 +246,7 @@ header {
     line-height: 27px;
     margin: 0;
     padding: 30px 30px 10px 30px;
+    opacity: .6;
 }
 
 .events-item-text {
