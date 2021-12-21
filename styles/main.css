@@ -216,27 +216,40 @@ header {
 }
 
 .events-item-maraphon {
-    background: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%), url(../images/@2x/maraphon@2x.png);
+    background-image: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%), url(../images/@2x/maraphon@2x.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 600px;
     position: relative;
+}
+
+.events-item-maraphon:hover {
+    background-image: linear-gradient(180deg, rgba(251, 241, 56, .6) 0%, rgba(253, 249, 182, 0) 100%), url(../images/@2x/maraphon@2x.png);
 }
 
 .events-item-vebinar1 {
-    background-image: url(../images/@2x/vebinar1@2x.png);
+    background-image: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%), url(../images/@2x/vebinar1@2x.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 600px;
     position: relative;
 }
 
+.events-item-vebinar1:hover {
+    background-image: linear-gradient(180deg, rgba(251, 241, 56, .6) 0%, rgba(253, 249, 182, 0) 100%), url(../images/@2x/vebinar1@2x.png);
+}
+
+
 .events-item-vebinar2 {
-    background-image: url(../images/@2x/vebinar2@2x.png);
+    background-image: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%), url(../images/@2x/vebinar2@2x.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 600px;
     position: relative;
+}
+
+.events-item-vebinar2:hover {
+    background-image: linear-gradient(180deg, rgba(251, 241, 56, .6) 0%, rgba(253, 249, 182, 0) 100%), url(../images/@2x/vebinar2@2x.png);
 }
 
 .events-item-time {
@@ -256,6 +269,42 @@ header {
     color: #2B3541;
     margin: 0;
     padding: 10px 30px;
+}
+
+.events-item-link {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #FBF138;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px 0px;
+    max-width: 221px;
+    background: #2B3541;
+    box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.28);
+    display: none;
+    margin: 40px auto;
+    text-align: center;
+    transition: .3s;
+}
+
+.events-item-maraphon,
+.events-item-vebinar1,
+.events-item-vebinar2 {
+    cursor: pointer;
+    transition: .3s;
+}
+
+.events-item-maraphon:hover .events-item-link,
+.events-item-vebinar1:hover .events-item-link,
+.events-item-vebinar2:hover .events-item-link {
+    display: block;
+}
+
+.events-item-maraphon:hover .events-item-name,
+.events-item-vebinar1:hover .events-item-name,
+.events-item-vebinar2:hover .events-item-name {
+    display: none;
 }
 
 .events-item-name {
