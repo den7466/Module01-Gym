@@ -177,7 +177,7 @@
             </div>
         </div>
     </main>
-    <div class="about">
+    <div class="about" id="about">
         <div class="about-item">
             <h3 class="about-title">
                 О компании
@@ -188,7 +188,7 @@
                 Оставайтесь с&nbsp;нами&nbsp;и&nbsp;вы сами увидите, 
                 что мы проводим не&nbsp;только&nbsp;онлайн-тренировки.
             </p>
-            <a href="#" class="about-link">Записаться</a>
+            <a href="#about" class="about-link" onclick="openPopUp()">Записаться</a>
         </div>
         <div class="about-item"></div>
         <div class="about-item">
@@ -234,7 +234,9 @@
                     <li><a href="#">О компании</a></li>
                 </ul>
             </nav>
-            <a href="mailto:info@freefit.com" class="mail-link">info@freefit.com</a>
+            <div class="mail-link">
+                <a href="mailto:info@freefit.com">info@freefit.com</a>
+            </div>
             <div class="social">
                 <button type="button"><a href="#" class="btn-instagram"></a></button>
                 <button type="button"><a href="#" class="btn-facebook"></a></button>
@@ -254,18 +256,24 @@
             </div>
         </div>
     </footer>
-    <!-- <div class="subscribe-pop-up">
-        <h3 class="subscribe-pop-up-title">
-            Заявка на участие «Марафон&nbsp;выносливости»
-        </h3>
-        <p class="subscribe-pop-up-description">
-            Заполните все поля, и мы пришлем информацию в ближайшее время
-        </p>
-        <form action="" class="subscribe-pop-up-form">
-            <input type="email" name="" id="" placeholder="Ваш e-mail">
-            <input type="tel" name="" id="" placeholder="Ваш номер телефона">
-            <button type="submit">Отправить</button>
-        </form>
-    </div> -->
+    <div class="subscribe-pop-up-bg" id="pop-up" onclick="closePopUp()">
+        <div class="subscribe-pop-up">
+            <button class="subscribe-pop-up-button" onclick="closePopUp()"></button>
+            <div class="subscribe-pop-up-title">
+                <h3>
+                    Заявка на участие «Марафон&nbsp;выносливости»
+                </h3>
+            </div>
+            <p class="subscribe-pop-up-description">
+                Заполните все поля, и мы пришлем информацию в ближайшее время
+            </p>
+            <form action="" class="subscribe-pop-up-form">
+                <input type="email" name="" id="" placeholder="Ваш e-mail">
+                <input type="tel" name="" id="" placeholder="Ваш номер телефона">
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
