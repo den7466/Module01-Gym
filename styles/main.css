@@ -118,13 +118,38 @@ header {
 }
 
 .banner-bg {
-    display: block;
-    width: 996px;
-    height: 852px;
+    width: 965px;
+    height: 850px;
+    position: absolute;
+    top: 0;
+    right: -75px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    z-index: -1;
+}
+
+.banner-img {
+    width: 965px;
+    height: 930px;
     position: absolute;
     top: 0px;
-    right: -185px;
-    z-index: -1;
+    right: -96px;
+}
+
+.banner-gradient-left {
+    width: 535px;
+    height: 100%;
+    background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
+    opacity: .2;
+}
+
+.banner-gradient-right {
+    width: 235px;
+    height: 100%;
+    background: linear-gradient(90deg, #FDF9B6 0%, rgba(253, 249, 182, 0.7) 166.81%);
+    opacity: .2;
 }
 
 .banner-title {
