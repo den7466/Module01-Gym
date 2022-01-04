@@ -305,8 +305,8 @@ header {
     color: #FBF138;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 20px 0px;
-    max-width: 221px;
+    padding: 20px 37px;
+    width: 221px;
     background: #2B3541;
     box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.28);
     display: none;
@@ -345,6 +345,10 @@ header {
     bottom: 0px;
     right: 0px;
     margin: 0;
+}
+
+.events-item-link-m {
+    display: none;
 }
 
 .schedule {
@@ -1082,6 +1086,10 @@ footer {
         background-image: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%), url(../images/@2x/vebinar2_m@2x.png);
     }
 
+    .events-item-vebinar2:hover {
+        background-image: linear-gradient(180deg, rgba(251, 241, 56, .6) 0%, rgba(253, 249, 182, 0) 100%), url(../images/@2x/vebinar2_m@2x.png);
+    }
+
     .events-item-time {
         font-size: 12px;
         line-height: 12px;
@@ -1092,5 +1100,104 @@ footer {
         font-size: 16px;
         line-height: 19px;
         padding: 16px 0px 0px 20px;
+    }
+
+    .events-item-link {
+        font-size: 12px;
+        line-height: 18px;
+        padding: 20px 0px;
+        width: 90%;
+    }
+
+    .events-item-vebinar2 > .events-item-link {
+        margin-left: 20px;
+    }
+
+    .events-item-name {
+        font-size: 12px;
+        line-height: 18px;
+        padding: 7px 16px;
+        right: auto;
+        left: 0;
+    }
+
+    .events-item-link-m {
+        display: block;
+        width: 30px;
+        height: 30px;
+        border: 0;
+        background-image: url(../images/icons/more.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #2B3541;
+        color: #FBF138;
+        cursor: pointer;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .events-item-maraphon:hover .events-item-link-m,
+    .events-item-vebinar1:hover .events-item-link-m,
+    .events-item-vebinar2:hover .events-item-link-m {
+        display: none;
+    }
+
+    .schedule {
+        max-width: 360px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        padding: 0px 10px;
+    }
+
+    .schedule-title {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .schedule-calendar {
+        font-size: 16px;
+        line-height: 19px;
+        opacity: .7;
+        flex-basis: 130px;
+    }
+
+    .schedule-item-grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "a"
+                             "b"
+                             "c"
+                             "d"
+                             "e"
+                             "f";
+        gap: 20px;
+    }
+
+    .schedule-item:nth-child(1) {
+        grid-area: a;
+    }
+
+    .schedule-item:nth-child(2) {
+        grid-area: c;
+    }
+
+    .schedule-item:nth-child(3) {
+        grid-area: e;
+    }
+
+    .schedule-item:nth-child(4) {
+        grid-area: b;
+    }
+
+    .schedule-item:nth-child(5) {
+        grid-area: d;
+    }
+
+    .schedule-item:nth-child(6) {
+        grid-area: f;
+    }
+
+    .schedule-item {
+        height: auto!important;
     }
 }
