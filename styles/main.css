@@ -70,6 +70,8 @@ header {
     height: 38px;
     border: 0;
     background-color: transparent;
+    padding: 0;
+    margin: 0;
 }
 
 .social .btn-instagram {
@@ -101,7 +103,7 @@ header {
 }
 
 .banner {
-    width: 100%;
+    max-width: 100%;
     overflow: hidden;
 }
 
@@ -908,4 +910,131 @@ footer {
     box-shadow: 0px 13px 24px rgba(43, 53, 65, 0.2);
     color: #FBF138;
     cursor: pointer;
+}
+
+/* Mobile-menu */
+.burger-btn {
+    border: 0;
+    background-image: url(../images/icons/burger.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 29px;
+    height: 22px;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+} 
+
+@media (min-width: 1001px) {
+    /* отключаем кнопку мобильного меню */
+}
+
+@media (max-width: 380px) {
+    header {
+        max-width: 360px;
+        padding: 30px 10px 60px;
+    }
+    
+    header .logo {
+        width: 78px;
+        height: 24px;
+    }
+
+    header .links {
+        flex-basis: 20%;
+        height: 22px;
+    }
+
+    header .links > ul {
+        display: none;
+    }
+
+    header .social {
+        gap: 20px;
+    }
+
+    header .social button {
+        width: 26px;
+        height: 26px;
+    }
+
+    .social .btn-instagram,
+    .social .btn-facebook {
+        width: 26px;
+        height: 26px;
+    }
+
+    .social .btn-instagram:hover,
+    .social .btn-facebook:hover {
+        transform: scale(1);
+    }
+    
+    .banner {
+        max-width: 360px;
+    }
+
+    .banner-box {
+        max-width: 360px;
+        padding: 0px 10px;
+    }
+
+    .banner-description {
+        max-width: 360px;
+    }
+
+    .banner-title {
+        font-size: 26px;
+        line-height: 32px;
+        letter-spacing: 0;
+    }
+
+    .banner-count {
+        font-size: 26px;
+        line-height: 32px;
+        margin-top: 14px;
+    }
+
+    .banner-text {
+        margin: 16px 0 0 0;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .banner-link {
+        margin: 40px 0;
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .banner-arrow {
+        display: none;
+    }
+
+    .banner-bg {
+        position: relative;
+        width: 100%;
+        max-width: 360px;
+        height: 310px;
+        top: 0;
+        right: 0;
+        gap: 10px;
+    }
+
+    .banner-gradient-left {
+        width: 213px;
+    }
+
+    .banner-gradient-right {
+        width: 117px;
+    }
+
+    .banner-img {
+        width: 100%;
+        height: 310px;
+        top: 0;
+        right: 0;
+    }
 }
