@@ -238,7 +238,7 @@ header {
 .events-item-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    height: 600px;
+    min-height: 600px;
     gap: 20px;
 }
 
@@ -246,7 +246,7 @@ header {
     background-image: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%), url(../images/@2x/maraphon@2x.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 600px;
+    min-height: 600px;
     position: relative;
 }
 
@@ -258,7 +258,7 @@ header {
     background-image: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%), url(../images/@2x/vebinar1@2x.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 600px;
+    min-height: 600px;
     position: relative;
 }
 
@@ -271,7 +271,7 @@ header {
     background-image: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%), url(../images/@2x/vebinar2@2x.png);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 600px;
+    min-height: 600px;
     position: relative;
 }
 
@@ -931,7 +931,7 @@ footer {
     /* отключаем кнопку мобильного меню */
 }
 
-@media (max-width: 380px) {
+@media (max-width: 360px) {
     header {
         max-width: 360px;
         padding: 30px 10px 60px;
@@ -1036,5 +1036,61 @@ footer {
         height: 310px;
         top: 0;
         right: 0;
+    }
+
+    .events {
+        max-width: 360px;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0 10px;
+    }
+
+    .events-title {
+        padding-top: 80px;
+        padding-bottom: 20px;
+        font-size: 26px;
+        line-height: 32px;
+        margin: 0;
+    }
+
+    .events-item-grid {
+        max-width: 340px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "a b"
+                             "c c";
+        gap: 10px;
+    }
+
+    .events-item-maraphon,
+    .events-item-vebinar1,
+    .events-item-vebinar2 {
+        min-height: 310px;
+    }
+
+    .events-item-maraphon {
+        grid-area: a;
+    }
+
+    .events-item-vebinar1 {
+        grid-area: b;
+    }
+
+    .events-item-vebinar2 {
+        grid-area: c;
+        min-height: 336px;
+        padding-right: 190px;
+        background-image: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%), url(../images/@2x/vebinar2_m@2x.png);
+    }
+
+    .events-item-time {
+        font-size: 12px;
+        line-height: 12px;
+        padding: 20px 0px 0px 20px;
+    }
+
+    .events-item-text {
+        font-size: 16px;
+        line-height: 19px;
+        padding: 16px 0px 0px 20px;
     }
 }
