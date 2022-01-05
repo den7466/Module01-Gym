@@ -1199,5 +1199,42 @@ footer {
 
     .schedule-item {
         height: auto!important;
+        padding: 20px 20px;
+    }
+
+    .schedule-item-calendar {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .schedule-item-main-description {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 24px;
+        margin-top: 11px;
+    }
+
+    .schedule-item-icon {
+        width: 34px;
+        height: 53px;
+        margin-bottom: 0;
+    }
+
+    .schedule-item-text {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 0;
+    }
+
+    .schedule-item-description {
+        font-size: 12px;
+        line-height: 18px;
+        margin-top: 16px;
+    }
+
+    .schedule-item-active .schedule-item-main-description {
+        margin-top: 55px;
     }
 }
