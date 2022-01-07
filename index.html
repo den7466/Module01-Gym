@@ -15,7 +15,7 @@
     <header>
         <a href="index.html" class="logo"></a>
         <nav class="links">
-            <button class="burger-btn" onclick=""></button>
+            <button class="burger-btn" onclick="openMobMenu()"></button>
             <ul>
                 <li><a href="#">Мероприятия</a></li>
                 <li><a href="#">Расписание</a></li>
@@ -308,8 +308,11 @@
             </form>
         </div>
     </div>
-    <!-- <div class="mobile-menu">
-        <a href="index.html" class="logo"></a>
+    <div class="mobile-menu" id="mob-menu">
+        <div class="mobile-menu-header">
+            <a href="index.html" class="logo"></a>
+            <button class="mobile-menu-close-btn" onclick="closeMobMenu()"></button>
+        </div>
         <nav class="links">
             <ul>
                 <li><a href="#">Мероприятия</a></li>
@@ -321,7 +324,7 @@
             <button type="button"><a href="#" class="btn-instagram"></a></button>
             <button type="button"><a href="#" class="btn-facebook"></a></button>
         </div>
-    </div> -->
+    </div>
     <script src="scripts/main.js"></script>
 </body>
 </html>
