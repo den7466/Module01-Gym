@@ -636,10 +636,11 @@ header {
     margin: 160px auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 336px minmax(97px, 1fr);
+    grid-template-rows: 168px minmax(97px, 1fr);
     grid-template-areas: 
-        "a a b b"
-        "c d e f";
+        "a a c c"
+        "b b c c"
+        "d e f g";
     gap: 77px 44px;
 }
 
@@ -649,13 +650,13 @@ header {
 
 .about-item:nth-child(2) {
     grid-area: b;
-    background-image: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%), url(../images/@2x/trainer@2x.png);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .about-item:nth-child(3) {
     grid-area: c;
+    background-image: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%), url(../images/@2x/trainer@2x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .about-item:nth-child(4) {
@@ -668,6 +669,10 @@ header {
 
 .about-item:nth-child(6) {
     grid-area: f;
+}
+
+.about-item:nth-child(7) {
+    grid-area: g;
 }
 
 .about-title {
@@ -1349,5 +1354,82 @@ footer {
         max-width: 360px;
         padding: 0 10px;
         margin-top: 80px;
+        margin-bottom: 80px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: minmax(97px, 1fr);
+        grid-template-areas: 
+            "a"
+            "b"
+            "c"
+            "d"
+            "e"
+            "f"
+            "g";
+        gap: 40px;
+    }
+    
+    .about-item:nth-child(1) {
+        grid-area: a;
+    }
+    
+    .about-item:nth-child(2) {
+        grid-area: f;
+        min-height: 65px;
+    }
+    
+    .about-item:nth-child(3) {
+        grid-area: g;
+        background-image: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%), url(../images/@2x/trainer@2x.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 207px;
+    }
+    
+    .about-item:nth-child(4) {
+        grid-area: b;
+    }
+    
+    .about-item:nth-child(5) {
+        grid-area: c;
+    }
+    
+    .about-item:nth-child(6) {
+        grid-area: d;
+    }
+    
+    .about-item:nth-child(7) {
+        grid-area: e;
+    }
+    
+    .about-title {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .about-text {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 0;
+    }
+
+    .about-item-title {
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 0;
+        margin-bottom: 16px;
+    }
+
+    .about-item-text {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 0;
+        margin-bottom: 0;
+        opacity: .6;
+    }
+
+    .about-link {
+        display: block;
+        text-align: center;
     }
 }
