@@ -726,7 +726,7 @@ header {
 
 footer {
     width: 100%;
-    height: 149px;
+    min-height: 149px;
     background: #F3F3F3;
     padding-top: 56px;
 }
@@ -824,7 +824,7 @@ footer {
 
 .subscribe-pop-up {
     width: 600px;
-    height: 577px;
+    min-height: 577px;
     position: fixed;
     background: #F3F3F3;
     top: calc(50% - 288.5px);
@@ -1431,5 +1431,116 @@ footer {
     .about-link {
         display: block;
         text-align: center;
+    }
+
+    footer {
+        background: transparent;
+    }
+
+    .footer-box-links,
+    .footer-box-copyright {
+        max-width: 360px;
+        padding: 0 10px;
+        margin-bottom: 40px;
+    }
+
+    .footer-box-links {
+        display: grid;
+        gap: 20px;
+        grid-template-areas: "a a"
+                             "b b"
+                             "c d";
+    }
+
+    .footer-box-links .logo {
+        grid-area: a;
+        margin: 0 auto 20px;
+    }
+
+    .footer-box-links .links {
+        grid-area: b;
+    }
+
+    .footer-box-links .mail-link {
+        grid-area: c;
+    }
+
+    .footer-box-links .social {
+        grid-area: d;
+        justify-content: flex-end;
+        gap: 23px;
+    }
+
+    .footer-box-links .social > button {
+        width: 27px;
+        height: 27px;
+    }
+
+    .footer-box-links .links ul {
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .footer-box-links ul > li > a {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .footer-box-links .mail-link > a {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .footer-box-links .mail-link::before {
+        width: 20px;
+        height: 20px;
+        left: -6px;
+        bottom: 10px;
+    }
+
+    .footer-box-copyright {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .footer-box-copyright .copyright-item {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .subscribe-pop-up {
+        width: 100%;
+        min-height: 505px;
+        position: fixed;
+        background: #F3F3F3;
+        top: 0;
+        left: 0;
+        box-shadow: 0px 4px 30px rgba(43, 53, 65, 0.6);
+    }
+
+    .subscribe-pop-up-title::before {
+        width: 31px;
+        height: 31px;
+        left: 80px;
+        bottom: 30px;
+    }
+
+    .subscribe-pop-up-title h3 {
+        font-size: 16px;
+        line-height: 19px;
+        padding: 0 65px;
+        margin-top: 50px;
+    }
+
+    .subscribe-pop-up-description {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 0 65px;
+        margin-top: 16px;
+        margin-bottom: 28px;
+    }
+
+    .subscribe-pop-up-form input {
+        width: calc(100% - 58px);
     }
 }
