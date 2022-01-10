@@ -690,6 +690,7 @@ header {
     color: #2B3541;
     margin-top: 19px;
     margin-bottom: 34px;
+    opacity: .6;
 }
 
 .about-link {
@@ -723,6 +724,7 @@ header {
     font-weight: 400;
     line-height: 27px;
     color: #2B3541;
+    opacity: .6;
 }
 
 footer {
@@ -815,7 +817,7 @@ footer {
 }
 
 .subscribe-pop-up-bg {
-    background: rgba(43, 53, 65, .6);;
+    background: rgba(43, 53, 65, .4);;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -830,7 +832,7 @@ footer {
     background: #F3F3F3;
     top: calc(50% - 288.5px);
     left: calc(50% - 300px);
-    box-shadow: 0px 4px 30px rgba(43, 53, 65, 0.6);
+    box-shadow: 0px 4px 30px rgba(43, 53, 65, .6);
 }
 
 .subscribe-pop-up-button {
@@ -892,6 +894,11 @@ footer {
     gap: 20px;
 }
 
+.subscribe-pop-up-form div {
+    width: 100%;
+    text-align: center;
+}
+
 .subscribe-pop-up-form input {
     border: 0;
     color: #2B3541;
@@ -899,7 +906,8 @@ footer {
     font-weight: 400;
     line-height: 27px;
     padding: 19px 19px 19px;
-    width: 500px;
+    margin: 0 auto;
+    width: calc(100% - 100px);
 }
 
 .subscribe-pop-up-form input:focus {
@@ -912,7 +920,8 @@ footer {
     color: #AE0303;
     opacity: 0;
     margin: 0;
-    padding: 0;
+    padding: 0 30px;
+    text-align: left;
 }
 
 .subscribe-pop-up-form input:invalid {
@@ -960,12 +969,21 @@ footer {
     cursor: pointer;
 }
 
+.mobile-menu-bg {
+    background: rgba(43, 53, 65, .4);;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: none;
+}
+
 .mobile-menu {
     width: 100%;
     background: #F3F3F3;
     position: fixed;
     top: 0;
-    display: none;
+    display: flex;
     flex-direction: column;
     padding: 33.5px 10px 10px 10px;
     gap: 40px;
@@ -1030,13 +1048,18 @@ footer {
     height: 26px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 993px) {
     .burger-btn {
         display: none;
     }
 }
 
 @media (max-width: 1140px) {
+    .banner-title {
+        font-size: 38px;
+        line-height: 1.5;
+    }
+
     .schedule-item-text {
         font-size: 14px;
         line-height: 1.5;
@@ -1048,7 +1071,7 @@ footer {
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
     header .links > ul {
         display: none;
     }
@@ -1056,6 +1079,14 @@ footer {
     .footer-box-links .links {
         flex-basis: 50%;
     }
+}
+
+@media (max-width: 985px) {
+    /* Ближайшие события в 2 колонки */
+}
+
+@media (max-width: 834px) {
+
 }
 
 @media (max-width: 360px) {
@@ -1073,10 +1104,6 @@ footer {
         flex-basis: 20%;
         height: 22px;
     }
-
-    /* header .links > ul {
-        display: none;
-    } */
 
     header .social {
         gap: 20px;
@@ -1584,7 +1611,18 @@ footer {
         margin-bottom: 28px;
     }
 
+    .subscribe-pop-up-form {
+        max-width: 360px;
+        padding: 0 10px;
+        gap: 2px;
+    }
+
     .subscribe-pop-up-form input {
-        width: calc(100% - 58px);
+        width: calc(100% - 38px);
+    }
+
+    .subscribe-pop-up-form button {
+        width: 100%;
+        margin-bottom: 40px;
     }
 }
