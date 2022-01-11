@@ -28,6 +28,7 @@ header {
 
 .links ul {
     display: flex;
+    align-items: baseline;
     justify-content: start;
     gap: 54px;
     list-style: none;
@@ -171,14 +172,17 @@ header {
     margin-bottom: 0;
 }
 
+.banner-text-box {
+    max-width: 297px;
+    margin: 20px 0 0 94px;
+}
+
 .banner-text {
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
     color: #2B3541;
-    margin: 20px 0 0 94px;
-    display: block;
-    max-width: 297px;
+    margin-bottom: 60px;
 }
 
 .banner-link {
@@ -190,9 +194,6 @@ header {
     color: #2B3541;
     padding: 20px 30px;
     background: #FBF138;
-    display: inline-block;
-    margin-left: 94px;
-    margin-top: 40px;
     box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
     transition: .2s;
 }
@@ -212,7 +213,7 @@ header {
     display: block;
     position: absolute;
     left: 94px;
-    top: 790px;
+    top: 775px;
     transition: .2s;
 }
 
@@ -305,11 +306,12 @@ header {
     text-decoration: none;
     text-transform: uppercase;
     padding: 20px 37px;
-    width: 50%;
+    width: 40%;
     background: #2B3541;
     box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.28);
     display: none;
-    margin: 40px auto;
+    margin-top: 40px;
+    margin-left: 30px;
     text-align: center;
     transition: .3s;
 }
@@ -393,7 +395,7 @@ header {
 }
 
 .schedule-item {
-    border: 1px solid #2B3541;
+    border: 1px solid rgba(43, 53, 65, .5);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -745,6 +747,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
 
 .footer-box-copyright {
@@ -753,11 +756,27 @@ footer {
     align-items: center;
 }
 
+.footer-box-links .links {
+    flex-basis: 50%;
+}
+
+.footer-box-links ul {
+    gap: 90px;
+    /* justify-content: space-between; */
+}
+
 .footer-box-links ul > li > a {
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
     color: #2B3541;
+}
+
+.footer-box-links .contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 62px;
 }
 
 .footer-box-links .mail-link {
@@ -785,14 +804,20 @@ footer {
     bottom: 12px;
 }
 
-.footer-box-links .social > button > .btn-instagram {
+.footer-box-links .social > button {
     width: 27px;
     height: 27px;
 }
 
+.footer-box-links .social > button > .btn-instagram,
 .footer-box-links .social > button > .btn-facebook {
     width: 27px;
     height: 27px;
+}
+
+.footer-box-links .social > button > .btn-instagram:hover,
+.footer-box-links .social > button > .btn-facebook:hover {
+    transform: scale(1);
 }
 
 .footer-box-copyright {
