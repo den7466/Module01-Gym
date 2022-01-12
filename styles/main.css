@@ -1063,6 +1063,8 @@ footer {
 }
 
 .mobile-menu .links ul li {
+    width: 100%;
+    padding-bottom: 20px;
     border-bottom: 1px solid rgba(43, 53, 65, .2);
 }
 
@@ -1072,6 +1074,10 @@ footer {
 
 .mobile-menu .links ul li a {
     color: #2B3541;
+}
+
+.mobile-menu .links ul li a::after {
+    display: none;
 }
 
 .mobile-menu .social {
@@ -1187,6 +1193,11 @@ footer {
         margin-top: 14px;
     }
 
+    .banner-text-box {
+        max-width: 360px;
+        margin: 0;
+    }
+
     .banner-text {
         margin: 16px 0 0 0;
         font-size: 16px;
@@ -1198,6 +1209,7 @@ footer {
         width: 100%;
         padding: 20px 0;
         text-align: center;
+        display: block;
     }
 
     .banner-arrow {
@@ -1294,6 +1306,7 @@ footer {
         line-height: 18px;
         padding: 20px 0px;
         width: 90%;
+        margin: 30px auto 0;
     }
 
     .events-item-vebinar2 > .events-item-link {
@@ -1389,6 +1402,11 @@ footer {
         padding: 20px 20px;
     }
 
+    .schedule-item:hover {
+        box-shadow: none;
+        border: 1px solid rgba(43, 53, 65, .5);
+    }
+
     .schedule-item-calendar {
         font-size: 16px;
         line-height: 24px;
@@ -1400,7 +1418,7 @@ footer {
         justify-content: flex-start;
         align-items: center;
         gap: 24px;
-        margin-top: 11px;
+        margin-top: 40px;
     }
 
     .schedule-item-icon {
@@ -1557,7 +1575,7 @@ footer {
         gap: 20px;
         grid-template-areas: "a a"
                              "b b"
-                             "c d";
+                             "c c";
     }
 
     .footer-box-links .logo {
@@ -1569,14 +1587,8 @@ footer {
         grid-area: b;
     }
 
-    .footer-box-links .mail-link {
+    .footer-box-links .contacts {
         grid-area: c;
-    }
-
-    .footer-box-links .social {
-        grid-area: d;
-        justify-content: flex-end;
-        gap: 23px;
     }
 
     .footer-box-links .social > button {
