@@ -7,10 +7,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 100%;
+    max-width: 1143px;
     height: 31px;
     margin: 0 auto;
-    padding: 49px 50px 27px;
+    padding: 49px 0px 27px;
 }
 
 .logo {
