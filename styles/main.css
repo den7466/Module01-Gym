@@ -762,7 +762,6 @@ footer {
 
 .footer-box-links ul {
     gap: 90px;
-    /* justify-content: space-between; */
 }
 
 .footer-box-links ul > li > a {
@@ -772,10 +771,14 @@ footer {
     color: #2B3541;
 }
 
+.footer-box-links ul > li > a::after {
+    display: none;
+}
+
 .footer-box-links .contacts {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     gap: 62px;
 }
 
