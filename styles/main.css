@@ -491,7 +491,7 @@ header {
     font-weight: 700;
     line-height: 22.5px;
     color: #2B3541;
-    margin: 0px 0px 20px 0px;
+    margin: 20px 0px 20px 0px;
 }
 
 .schedule-item-description {
@@ -502,7 +502,7 @@ header {
     margin: 0;
     max-height: 0;
     overflow: hidden;
-    transition: .4s linear;
+    /* transition: .4s ease; */
 }
 
 .subscribe {
@@ -1200,7 +1200,6 @@ footer {
 
     .events-item-vebinar2 {
         grid-area: c;
-        padding-right: 190px;
         background-image: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%), url(../images/@2x/vebinar2_m@2x.png);
     }
 
@@ -1309,7 +1308,7 @@ footer {
     .banner-bg {
         position: relative;
         width: 100%;
-        height: 70vh;
+        height: 410px;
         top: 0;
         right: 0;
         gap: 5vw;
@@ -1330,80 +1329,13 @@ footer {
         right: 0;
     }
 
-    .about {
-        max-width: 100%;
-        padding: 0 50px;
-        /* margin-top: 80px;
-        margin-bottom: 80px; */
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: minmax(97px, 1fr);
-        grid-template-areas: 
-            "a"
-            "b"
-            "c"
-            "d"
-            "e"
-            "f"
-            "g";
-        gap: 40px;
-    }
-    
-    .about-item:nth-child(1) {
-        grid-area: a;
-    }
-    
-    .about-item:nth-child(2) {
-        grid-area: f;
-        min-height: 65px;
-    }
-    
-    .about-item:nth-child(3) {
-        grid-area: g;
-        background-image: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%), url(../images/@2x/trainer@2x.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        min-height: 70vh;
-    }
-    
-    .about-item:nth-child(4) {
-        grid-area: b;
-    }
-    
-    .about-item:nth-child(5) {
-        grid-area: c;
-    }
-    
-    .about-item:nth-child(6) {
-        grid-area: d;
-    }
-    
-    .about-item:nth-child(7) {
-        grid-area: e;
-    }
-
-    .about-item-text {
-        opacity: .6;
-    }
-
     .schedule {
         max-width: 100%;
-        /* margin-top: 80px;
-        margin-bottom: 80px; */
         padding: 0px 50px;
     }
 
-    /* .schedule-title {
-        font-size: 26px;
-        line-height: 32px;
-    } */
-
     .schedule-calendar {
-        /* font-size: 16px;
-        line-height: 19px; */
         opacity: .7;
-        /* flex-basis: 130px; */
     }
 
     .schedule-item-grid {
@@ -1443,18 +1375,12 @@ footer {
 
     .schedule-item {
         height: auto!important;
-        /* padding: 20px 20px; */
     }
 
     .schedule-item:hover {
         box-shadow: none;
         border: 1px solid rgba(43, 53, 65, .5);
     }
-
-    /* .schedule-item-calendar {
-        font-size: 16px;
-        line-height: 24px;
-    } */
 
     .schedule-item-main-description {
         display: flex;
@@ -1465,26 +1391,347 @@ footer {
         margin-top: 40px;
     }
 
-    /* .schedule-item-icon {
-        width: 34px;
-        height: 53px;
+    .schedule-item-icon {
         margin-bottom: 0;
-    } */
-
-    /* .schedule-item-text {
-        font-size: 16px;
-        line-height: 20px;
-        margin-bottom: 0;
-    } */
-
-    /* .schedule-item-description {
-        font-size: 12px;
-        line-height: 18px;
-        margin-top: 16px;
-    } */
+    }
 
     .schedule-item-active .schedule-item-main-description {
         margin-top: 55px;
+    }
+
+    .about {
+        max-width: 100%;
+        padding: 0 50px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: minmax(97px, 1fr);
+        grid-template-areas: 
+            "a"
+            "b"
+            "c"
+            "d"
+            "e"
+            "f"
+            "g";
+        gap: 40px;
+    }
+    
+    .about-item:nth-child(1) {
+        grid-area: a;
+    }
+    
+    .about-item:nth-child(2) {
+        grid-area: f;
+        min-height: 65px;
+    }
+    
+    .about-item:nth-child(3) {
+        grid-area: g;
+        background-image: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%), url(../images/@2x/trainer@2x.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 410px;
+    }
+    
+    .about-item:nth-child(4) {
+        grid-area: b;
+    }
+    
+    .about-item:nth-child(5) {
+        grid-area: c;
+    }
+    
+    .about-item:nth-child(6) {
+        grid-area: d;
+    }
+    
+    .about-item:nth-child(7) {
+        grid-area: e;
+    }
+
+    .about-item-text {
+        opacity: .6;
+    }
+}
+
+@media (max-width: 695px) {
+    header .links {
+        flex-basis: 20%;
+    }
+    
+    .banner-box {
+        padding: 0 10px;
+    }
+
+    .banner-title {
+        font-size: 26px;
+        line-height: 32px;
+        letter-spacing: 0;
+    }
+
+    .banner-count {
+        font-size: 26px;
+        line-height: 32px;
+        margin-top: 14px;
+    }
+
+    .banner-text {
+        margin: 16px 0 0 0;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .banner-link {
+        margin: 40px 0;
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+        display: block;
+    }
+
+    .events {
+        padding: 0 10px;
+        margin-top: 20px;
+    }
+    
+    .events-item-maraphon,
+    .events-item-vebinar1,
+    .events-item-vebinar2 {
+        min-height: 480px;
+    }
+
+    .events-title {
+        padding-top: 80px;
+        padding-bottom: 20px;
+        font-size: 26px;
+        line-height: 32px;
+        margin: 0;
+    }
+
+    .events-item-time {
+        font-size: 12px;
+        line-height: 12px;
+        padding: 20px 0px 0px 20px;
+    }
+
+    .events-item-text {
+        font-size: 16px;
+        line-height: 19px;
+        padding: 16px 0px 0px 20px;
+    }
+
+    .events-item-link {
+        font-size: 12px;
+        line-height: 18px;
+        padding: 20px 0px;
+        width: calc(90% - 20px);
+        margin: 30px 0 0 20px;
+    }
+
+    .events-item-vebinar2 > .events-item-link {
+        margin-left: 20px;
+        width: calc(50% - 60px);
+    }
+
+    .events-item-name {
+        font-size: 12px;
+        line-height: 18px;
+        padding: 7px 16px;
+        right: auto;
+        left: 0;
+    }
+
+    .events-item-link-m {
+        display: block;
+        width: 30px;
+        height: 30px;
+        border: 0;
+        background-image: url(../images/icons/more.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #2B3541;
+        color: #FBF138;
+        cursor: pointer;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .events-item-maraphon:hover .events-item-link-m,
+    .events-item-vebinar1:hover .events-item-link-m,
+    .events-item-vebinar2:hover .events-item-link-m {
+        display: none;
+    }
+
+    .schedule {
+        padding: 0px 10px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .schedule-title {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .schedule-calendar {
+        font-size: 16px;
+        line-height: 19px;
+        opacity: .7;
+        flex-basis: 130px;
+    }
+
+    .schedule-item {
+        padding: 20px 20px;
+    }
+
+    .schedule-item-calendar {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .schedule-item-icon {
+        width: 34px;
+        height: 53px;
+    }
+
+    .schedule-item-text {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 0;
+    }
+
+    .schedule-item-description {
+        font-size: 12px;
+        line-height: 18px;
+        margin-top: 16px;
+    }
+
+    .subscribe {
+        min-height: 416px;
+    }
+
+    .subscribe-box {
+        max-width: 100%;
+        padding: 0px 10px;
+    }
+
+    .subscribe-title {
+        max-width: max-content;
+        margin: 0 auto;
+    }
+
+    .subscribe-title::before {
+        width: 31px;
+        height: 31px;
+        top: 42px;
+        left: 40px;
+    }
+
+    .subscribe-title > h3 {
+        font-size: 26px;
+        line-height: 32px;
+        padding: 57px 54px 51px 54px;
+        margin: 0;
+    }
+
+    .subscribe-field-inpt {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .subscribe-field-inpt input {
+        min-width: calc(100% - 70px);
+        padding: 0 35px;
+    }
+
+    .about {
+        padding: 0 10px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        gap: 40px;
+    }
+
+    .about-item:nth-child(3) {
+        min-height: 310px;
+    }
+    
+    .about-title {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .about-text {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 0;
+    }
+
+    .about-item-title {
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 0;
+        margin-bottom: 16px;
+    }
+
+    .about-item-text {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 0;
+        margin-bottom: 0;
+        opacity: .6;
+    }
+
+    .about-link {
+        display: block;
+        text-align: center;
+    }
+
+    .footer-box-links,
+    .footer-box-copyright {
+        padding: 0 10px;
+        margin-bottom: 40px;
+    }
+
+    .footer-box-links {
+        gap: 20px;
+    }
+
+    .footer-box-links .social > button {
+        width: 27px;
+        height: 27px;
+    }
+
+    .footer-box-links .links ul {
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .footer-box-links ul > li > a {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .footer-box-links .mail-link > a {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .footer-box-links .mail-link::before {
+        width: 20px;
+        height: 20px;
+        left: -6px;
+        bottom: 10px;
+    }
+
+    .footer-box-copyright {
+        gap: 16px;
+    }
+
+    .footer-box-copyright .copyright-item {
+        font-size: 10px;
+        line-height: 15px;
     }
 }
 
