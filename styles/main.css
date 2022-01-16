@@ -1459,6 +1459,11 @@ footer {
     header .links {
         flex-basis: 20%;
     }
+
+    .banner-text-box {
+        max-width: 100%;
+        margin: 0;
+    }
     
     .banner-box {
         padding: 0 10px;
@@ -1733,10 +1738,108 @@ footer {
         font-size: 10px;
         line-height: 15px;
     }
+
+    .subscribe-pop-up {
+        width: 100%;
+        min-height: 505px;
+        position: fixed;
+        background: #F3F3F3;
+        top: 0;
+        left: 0;
+        box-shadow: 0px 4px 30px rgba(43, 53, 65, 0.6);
+    }
+
+    .subscribe-pop-up-title {
+        max-width: max-content;
+        margin: 0 auto;
+    }
+
+    .subscribe-pop-up-title::before {
+        width: 31px;
+        height: 31px;
+        left: 48px;
+        bottom: 12px;
+    }
+
+    .subscribe-pop-up-title h3 {
+        font-size: 16px;
+        line-height: 19px;
+        padding: 0 65px;
+        margin-top: 50px;
+    }
+
+    .subscribe-pop-up-description {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 0 65px;
+        margin-top: 16px;
+        margin-bottom: 28px;
+    }
+
+    .subscribe-pop-up-form {
+        max-width: 100%;
+        padding: 0 10px;
+        gap: 2px;
+    }
+
+    .subscribe-pop-up-form input {
+        width: calc(100% - 38px);
+    }
+
+    .subscribe-pop-up-form p {
+        padding: 0;
+    }
+
+    .subscribe-pop-up-form button {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 524px) {
+    .subscribe-pop-up-title {
+        max-width: min-content;
+    }
+    
+    .subscribe-pop-up-title::before {
+        left: 16px;
+        bottom: 30px;
+    }
+
+    .subscribe-pop-up-title h3 {
+        padding: 0;
+    }
+}
+
+@media (max-width: 509px) {
+    .subscribe-title {
+        max-width: min-content;
+    }
+}
+
+@media (max-width: 414px) {
+    .banner-bg {
+        height: 310px;
+    }
+    
+    .events-item-maraphon,
+    .events-item-vebinar1,
+    .events-item-vebinar2 {
+        min-height: 310px;
+    }
 }
 
 @media (max-width: 360px) {
-    header {
+    .events-item-link {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .events-item-vebinar2 > .events-item-link {
+        width: calc(50% - 10px);
+    }
+
+    /* header {
         max-width: 360px;
         padding: 30px 10px 60px;
     }
@@ -2250,5 +2353,5 @@ footer {
     .subscribe-pop-up-form button {
         width: 100%;
         margin-bottom: 40px;
-    }
+    } */
 }
