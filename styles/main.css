@@ -135,8 +135,13 @@ header {
     width: 965px;
     height: 930px;
     position: absolute;
+    display: block;
     top: 0px;
     right: -96px;
+    background: url(../images/@2x/banner-bg@2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
 }
 
 .banner-gradient-left {
@@ -1091,9 +1096,16 @@ footer {
     height: 26px;
 }
 
-@media (min-width: 993px) {
+@media (min-width: 898px) {
     .burger-btn {
         display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    header {
+        padding-left: 50px;
+        padding-right: 50px;
     }
 }
 
@@ -1114,27 +1126,128 @@ footer {
     }
 }
 
-@media (max-width: 992px) {
-    header .links > ul {
-        display: none;
+@media (max-width: 1024px) {
+    footer {
+        background: transparent;
     }
 
+    .footer-box-links,
+    .footer-box-copyright {
+        max-width: 100%;
+        padding: 0 50px;
+        margin-bottom: 40px;
+    }
+
+    .footer-box-links {
+        display: grid;
+        gap: 40px;
+        grid-template-areas: "a a"
+                             "b b"
+                             "c c";
+    }
+
+    .footer-box-links .logo {
+        grid-area: a;
+        margin: 0 auto 20px;
+    }
+
+    .footer-box-links .links {
+        grid-area: b;
+    }
+
+    .footer-box-links .contacts {
+        grid-area: c;
+    }
+
+    .footer-box-links .links ul {
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+    .footer-box-copyright {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 992px) {
     .footer-box-links .links {
         flex-basis: 50%;
     }
 }
 
 @media (max-width: 985px) {
-    /* Ближайшие события в 2 колонки */
+    .events {
+        max-width: 100%;
+        margin-bottom: 0;
+        padding: 0 50px;
+    }
+
+    .events-item-grid {
+        max-width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "a b"
+                             "c c";
+    }
+
+    .events-item-maraphon {
+        grid-area: a;
+    }
+
+    .events-item-vebinar1 {
+        grid-area: b;
+    }
+
+    .events-item-vebinar2 {
+        grid-area: c;
+        padding-right: 190px;
+        background-image: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%), url(../images/@2x/vebinar2_m@2x.png);
+    }
+
+    .events-item-vebinar2:hover {
+        background-image: linear-gradient(180deg, rgba(251, 241, 56, .6) 0%, rgba(253, 249, 182, 0) 100%), url(../images/@2x/vebinar2_m@2x.png);
+    }
+
+    .events-item-vebinar2 > .events-item-link {
+        margin-left: 30px;
+        width: 25%;
+    }
+
+    .events-item-name {
+        right: auto;
+        left: 0;
+    }
+
+    .events-item-link-m {
+        display: block;
+        width: 47px;
+        height: 47px;
+        border: 0;
+        background-image: url(../images/icons/more.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #2B3541;
+        color: #FBF138;
+        cursor: pointer;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .events-item-maraphon:hover .events-item-link-m,
+    .events-item-vebinar1:hover .events-item-link-m,
+    .events-item-vebinar2:hover .events-item-link-m {
+        display: none;
+    }
 }
 
-@media (max-width: 834px) {
+@media (max-width: 897px) {
+    header .links > ul {
+        display: none;
+    }
 
-}
-
-@media (max-width: 360px) {
     header {
-        max-width: 360px;
+        max-width: 100%;
         padding: 30px 10px 60px;
     }
     
@@ -1144,7 +1257,7 @@ footer {
     }
 
     header .links {
-        flex-basis: 20%;
+        flex-basis: 60%;
         height: 22px;
     }
 
@@ -1167,7 +1280,224 @@ footer {
     .social .btn-facebook:hover {
         transform: scale(1);
     }
+
+    .banner {
+        max-width: 100%;
+    }
+
+    .banner-box {
+        max-width: 100%;
+        padding: 0px 50px;
+    }
+
+    .banner-description {
+        max-width: 100%;
+    }
+
+    .banner-link {
+        margin: 40px 0;
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+        display: block;
+    }
+
+    .banner-arrow {
+        display: none;
+    }
+
+    .banner-bg {
+        position: relative;
+        width: 100%;
+        height: 70vh;
+        top: 0;
+        right: 0;
+        gap: 5vw;
+    }
+
+    .banner-gradient-left {
+        width: 65vw;
+    }
+
+    .banner-gradient-right {
+        width: 30vw;
+    }
+
+    .banner-img {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+    }
+
+    .about {
+        max-width: 100%;
+        padding: 0 50px;
+        /* margin-top: 80px;
+        margin-bottom: 80px; */
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: minmax(97px, 1fr);
+        grid-template-areas: 
+            "a"
+            "b"
+            "c"
+            "d"
+            "e"
+            "f"
+            "g";
+        gap: 40px;
+    }
     
+    .about-item:nth-child(1) {
+        grid-area: a;
+    }
+    
+    .about-item:nth-child(2) {
+        grid-area: f;
+        min-height: 65px;
+    }
+    
+    .about-item:nth-child(3) {
+        grid-area: g;
+        background-image: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%), url(../images/@2x/trainer@2x.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 70vh;
+    }
+    
+    .about-item:nth-child(4) {
+        grid-area: b;
+    }
+    
+    .about-item:nth-child(5) {
+        grid-area: c;
+    }
+    
+    .about-item:nth-child(6) {
+        grid-area: d;
+    }
+    
+    .about-item:nth-child(7) {
+        grid-area: e;
+    }
+
+    .about-item-text {
+        opacity: .6;
+    }
+
+    .schedule {
+        max-width: 100%;
+        /* margin-top: 80px;
+        margin-bottom: 80px; */
+        padding: 0px 50px;
+    }
+
+    /* .schedule-title {
+        font-size: 26px;
+        line-height: 32px;
+    } */
+
+    .schedule-calendar {
+        /* font-size: 16px;
+        line-height: 19px; */
+        opacity: .7;
+        /* flex-basis: 130px; */
+    }
+
+    .schedule-item-grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "a"
+                             "b"
+                             "c"
+                             "d"
+                             "e"
+                             "f";
+        gap: 20px;
+    }
+
+    .schedule-item:nth-child(1) {
+        grid-area: a;
+    }
+
+    .schedule-item:nth-child(2) {
+        grid-area: c;
+    }
+
+    .schedule-item:nth-child(3) {
+        grid-area: e;
+    }
+
+    .schedule-item:nth-child(4) {
+        grid-area: b;
+    }
+
+    .schedule-item:nth-child(5) {
+        grid-area: d;
+    }
+
+    .schedule-item:nth-child(6) {
+        grid-area: f;
+    }
+
+    .schedule-item {
+        height: auto!important;
+        /* padding: 20px 20px; */
+    }
+
+    .schedule-item:hover {
+        box-shadow: none;
+        border: 1px solid rgba(43, 53, 65, .5);
+    }
+
+    /* .schedule-item-calendar {
+        font-size: 16px;
+        line-height: 24px;
+    } */
+
+    .schedule-item-main-description {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 24px;
+        margin-top: 40px;
+    }
+
+    /* .schedule-item-icon {
+        width: 34px;
+        height: 53px;
+        margin-bottom: 0;
+    } */
+
+    /* .schedule-item-text {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 0;
+    } */
+
+    /* .schedule-item-description {
+        font-size: 12px;
+        line-height: 18px;
+        margin-top: 16px;
+    } */
+
+    .schedule-item-active .schedule-item-main-description {
+        margin-top: 55px;
+    }
+}
+
+@media (max-width: 360px) {
+    header {
+        max-width: 360px;
+        padding: 30px 10px 60px;
+    }
+
+    header .links {
+        flex-basis: 20%;
+    }
+
     .banner {
         max-width: 360px;
     }
