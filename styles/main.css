@@ -10,7 +10,7 @@ header {
     max-width: 1143px;
     height: 31px;
     margin: 0 auto;
-    padding: 49px 0px 27px;
+    padding: 49px 20px 27px;
 }
 
 .logo {
@@ -108,7 +108,7 @@ header {
     max-width: 1143px;
     margin: 0 auto;
     position: relative;
-    padding: 228px 50px 239px;
+    padding: 228px 20px 239px;
 }
 
 .banner-description {
@@ -226,7 +226,7 @@ header {
 .events {
     max-width: 1143px;
     margin: 160px auto;
-    padding: 0 50px;
+    padding: 0 20px;
 }
 
 .events-title {
@@ -357,7 +357,7 @@ header {
 .schedule {
     max-width: 1143px;
     margin: 160px auto;
-    padding: 0 50px;
+    padding: 0 20px;
 }
 
 .schedule-header {
@@ -647,7 +647,7 @@ header {
 .about {
     max-width: 1143px;
     margin: 160px auto;
-    padding: 0 50px;
+    padding: 0 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 168px minmax(97px, 1fr);
@@ -752,7 +752,7 @@ footer {
 .footer-box-copyright {
     max-width: 1143px;
     margin: 0 auto;
-    padding: 0 50px 21px;
+    padding: 0 20px 21px;
 }
 
 .footer-box-links {
@@ -1100,17 +1100,28 @@ footer {
     }
 }
 
-@media (max-width: 1200px) {
-    header {
-        padding-left: 50px;
-        padding-right: 50px;
+@media (max-width: 1600px) {
+    .banner-bg {
+        right: 0;
+    }
+}
+
+@media (max-width: 1408px) {
+    .banner-img {
+        right: 0;
+    }
+}
+
+@media (max-width: 1230px) {
+    .banner-title {
+        font-size: 38px;
+        line-height: 1.5;
     }
 }
 
 @media (max-width: 1140px) {
-    .banner-title {
-        font-size: 38px;
-        line-height: 1.5;
+    .banner-text-box {
+        margin: 0;
     }
 
     .schedule-item-text {
@@ -1124,6 +1135,60 @@ footer {
     }
 }
 
+@media (max-width: 1050px) {
+    .banner {
+        max-width: 100%;
+    }
+
+    .banner-box {
+        max-width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .banner-description {
+        max-width: 60%;
+        margin: 0 auto;
+    }
+
+    .banner-link {
+        margin: 40px 0;
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+        display: block;
+    }
+
+    .banner-arrow {
+        display: none;
+    }
+
+    .banner-bg {
+        position: relative;
+        width: 100%;
+        height: 610px;
+        top: 0;
+        right: 0;
+        gap: 5vw;
+    }
+
+    .banner-gradient-left {
+        width: 65vw;
+    }
+
+    .banner-gradient-right {
+        width: 30vw;
+    }
+
+    .banner-img {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background-position: bottom center;
+    }
+}
+
 @media (max-width: 1024px) {
     footer {
         background: transparent;
@@ -1132,7 +1197,6 @@ footer {
     .footer-box-links,
     .footer-box-copyright {
         max-width: 100%;
-        padding: 0 50px;
         margin-bottom: 40px;
     }
 
@@ -1178,7 +1242,6 @@ footer {
     .events {
         max-width: 100%;
         margin-bottom: 0;
-        padding: 0 50px;
     }
 
     .events-item-grid {
@@ -1238,6 +1301,12 @@ footer {
     }
 }
 
+@media (max-width: 891px) {
+    .banner-description {
+        max-width: 80%;
+    }
+}
+
 @media (max-width: 897px) {
     header .links > ul {
         display: none;
@@ -1245,7 +1314,7 @@ footer {
 
     header {
         max-width: 100%;
-        padding: 30px 10px 60px;
+        padding: 30px 20px 60px;
     }
     
     header .logo {
@@ -1267,6 +1336,10 @@ footer {
         height: 26px;
     }
 
+    .banner-bg {
+        height: 410px;
+    }
+
     .social .btn-instagram,
     .social .btn-facebook {
         width: 26px;
@@ -1278,58 +1351,8 @@ footer {
         transform: scale(1);
     }
 
-    .banner {
-        max-width: 100%;
-    }
-
-    .banner-box {
-        max-width: 100%;
-        padding: 0px 50px;
-    }
-
-    .banner-description {
-        max-width: 100%;
-    }
-
-    .banner-link {
-        margin: 40px 0;
-        width: 100%;
-        padding: 20px 0;
-        text-align: center;
-        display: block;
-    }
-
-    .banner-arrow {
-        display: none;
-    }
-
-    .banner-bg {
-        position: relative;
-        width: 100%;
-        height: 410px;
-        top: 0;
-        right: 0;
-        gap: 5vw;
-    }
-
-    .banner-gradient-left {
-        width: 65vw;
-    }
-
-    .banner-gradient-right {
-        width: 30vw;
-    }
-
-    .banner-img {
-        width: 100%;
-        height: 100%;
-        top: 0;
-        right: 0;
-    }
-
     .schedule {
         max-width: 100%;
-        padding: 0px 50px;
     }
 
     .schedule-calendar {
@@ -1399,7 +1422,6 @@ footer {
 
     .about {
         max-width: 100%;
-        padding: 0 50px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: minmax(97px, 1fr);
@@ -1451,17 +1473,43 @@ footer {
     .about-item-text {
         opacity: .6;
     }
+
+    .mobile-menu {
+        padding: 33.5px 20px 20px 20px;
+    }
+
+    .mobile-menu-header {
+        max-width: calc(100% - 40px);
+    }
+
+    .mobile-menu .links {
+        max-width: calc(100% - 40px);
+    }
+
+    .mobile-menu .social {
+        max-width: calc(100% - 40px);
+    }
 }
 
 @media (max-width: 695px) {
+    header {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
     header .links {
         flex-basis: 20%;
     }
 
-    .banner-text-box {
-        max-width: 100%;
+    .banner-description {
+        max-width: 60%;
         margin: 0;
     }
+
+    /* .banner-text-box {
+        max-width: 100%;
+        margin: 0;
+    } */
     
     .banner-box {
         padding: 0 10px;
@@ -1792,6 +1840,28 @@ footer {
         width: 100%;
         margin-bottom: 40px;
     }
+
+    .mobile-menu {
+        padding: 33.5px 10px 10px 10px;
+    }
+
+    .mobile-menu-header {
+        max-width: calc(100% - 20px);
+    }
+
+    .mobile-menu .links {
+        max-width: calc(100% - 20px);
+    }
+
+    .mobile-menu .social {
+        max-width: calc(100% - 20px);
+    }
+}
+
+@media (max-width: 588px) {
+    .banner-description {
+        max-width: 80%;
+    }
 }
 
 @media (max-width: 524px) {
@@ -1812,6 +1882,16 @@ footer {
 @media (max-width: 509px) {
     .subscribe-title {
         max-width: min-content;
+    }
+}
+
+@media (max-width: 450px) {
+    .banner-description {
+        max-width: 100%;
+    }
+
+    .banner-text-box {
+        max-width: 100%;
     }
 }
 
