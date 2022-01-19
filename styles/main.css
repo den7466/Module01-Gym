@@ -116,8 +116,8 @@ header {
 }
 
 .banner-bg {
-    width: 965px;
-    height: 850px;
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     right: -75px;
@@ -129,8 +129,8 @@ header {
 }
 
 .banner-img {
-    width: 965px;
-    height: 852px;
+    width: 100%;
+    height: 100%;
     position: absolute;
     display: block;
     top: 0px;
@@ -138,7 +138,7 @@ header {
     background: url(../images/@2x/banner-bg@2x.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: bottom;
+    background-position: bottom right;
 }
 
 .banner-gradient-left {
@@ -671,6 +671,7 @@ header {
     background-image: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%), url(../images/@2x/trainer@2x.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .about-item:nth-child(4) {
@@ -1157,7 +1158,7 @@ footer {
     }
 
     .footer-box-links .links ul {
-        justify-content: space-around;
+        justify-content: space-between;
         gap: 20px;
     }
 
