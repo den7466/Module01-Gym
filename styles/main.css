@@ -480,7 +480,7 @@ header {
 .schedule-item-icon {
     width: 65px;
     height: 65px;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 }
 
 .schedule-item-text {
@@ -488,7 +488,7 @@ header {
     font-weight: 700;
     line-height: 22.5px;
     color: #2B3541;
-    margin: 20px 0px 20px 0px;
+    margin: 0px 0px 20px 0px;
 }
 
 .schedule-item-description {
@@ -1123,14 +1123,21 @@ footer {
     .banner-text-box {
         margin: 0;
     }
+}
 
+@media (max-width: 1050px) {
+    .schedule-item-icon {
+        width: 39px;
+        height: 39px;
+    }
+    
     .schedule-item-text {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 1.5;
     }
 
     .schedule-item-description {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 1.5;
     }
 }
@@ -1396,6 +1403,7 @@ footer {
 
     .schedule-item {
         height: auto!important;
+        min-height: 158px;
     }
 
     .schedule-item:hover {
@@ -1416,8 +1424,12 @@ footer {
         margin-bottom: 0;
     }
 
+    .schedule-item-text {
+        margin-top: 20px;
+    }
+
     .schedule-item-active .schedule-item-main-description {
-        margin-top: 55px;
+        margin-top: 100px;
     }
 
     .about {
@@ -1505,11 +1517,6 @@ footer {
         max-width: 60%;
         margin: 0;
     }
-
-    /* .banner-text-box {
-        max-width: 100%;
-        margin: 0;
-    } */
     
     .banner-box {
         padding: 0 10px;
@@ -1904,6 +1911,17 @@ footer {
     .events-item-vebinar1,
     .events-item-vebinar2 {
         min-height: 310px;
+    }
+}
+
+@media (max-width: 410px) {
+    .schedule-item-main-description {
+        margin-top: 0;
+    }
+    
+    .schedule-item-text {
+        margin-top: 16px;
+        margin-bottom: 16px;
     }
 }
 
