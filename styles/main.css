@@ -1750,6 +1750,10 @@ footer {
         text-align: center;
     }
 
+    footer {
+        padding-top: 0;
+    }
+
     .footer-box-links,
     .footer-box-copyright {
         padding: 0 10px;
