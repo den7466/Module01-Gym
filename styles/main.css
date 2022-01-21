@@ -786,7 +786,7 @@ footer {
 }
 
 .footer-box-links ul > li > a::after {
-    display: none;
+    /* display: none; */
 }
 
 .footer-box-links .contacts {
@@ -822,19 +822,14 @@ footer {
 }
 
 .footer-box-links .social > .button {
-    width: 27px;
-    height: 27px;
+    width: 35px;
+    height: 35px;
 }
 
 .footer-box-links .social > .button > .btn-instagram,
 .footer-box-links .social > .button > .btn-facebook {
     width: 27px;
     height: 27px;
-}
-
-.footer-box-links .social > .button > .btn-instagram:hover,
-.footer-box-links .social > .button > .btn-facebook:hover {
-    transform: scale(1);
 }
 
 .footer-box-copyright {
