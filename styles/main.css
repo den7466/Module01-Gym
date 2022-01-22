@@ -951,7 +951,7 @@ footer {
 }
 
 .subscribe-pop-up-form input {
-    border: 0;
+    border: 1px solid transparent;
     color: #2B3541;
     font-size: 18px;
     font-weight: 400;
