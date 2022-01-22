@@ -550,7 +550,7 @@ header {
 }
 
 .subscribe-field-inpt input {
-    border: 0;
+    border: 1px solid transparent;
     color: #2B3541;
     font-size: 18px;
     font-weight: 400;
@@ -558,6 +558,24 @@ header {
     padding: 0px 19px;
     min-width: 372px;
     height: 65px;
+    outline: none;
+}
+
+.subscribe-field-inpt-ctr p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #AE0303;
+    opacity: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.subscribe-field-inpt-ctr input:invalid {
+    border: 1px solid #AE0303;
+}
+
+.subscribe-field-inpt-ctr > input:invalid + p {
+    opacity: 1;
 }
 
 .subscribe-field-inpt button {
@@ -585,7 +603,6 @@ header {
     justify-content: flex-start;
     align-items: center;
     gap: 5px;
-    margin-top: 10px;
 }
 
 .subscribe-chkbx {
