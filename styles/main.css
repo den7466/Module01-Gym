@@ -65,8 +65,8 @@ header {
 }
 
 .social .button {
-    width: 38px;
-    height: 38px;
+    width: 30px;
+    height: 30px;
     padding: 0;
     margin: 0;
 }
@@ -248,8 +248,9 @@ header {
     background-image: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%), url(../images/@2x/maraphon@2x.png);
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 600px;
+    min-height: 540px;
     position: relative;
+    padding: 30px 30px;
 }
 
 .events-item-maraphon:hover {
@@ -260,8 +261,9 @@ header {
     background-image: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%), url(../images/@2x/vebinar1@2x.png);
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 600px;
+    min-height: 540px;
     position: relative;
+    padding: 30px 30px;
 }
 
 .events-item-vebinar1:hover {
@@ -273,8 +275,9 @@ header {
     background-image: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%), url(../images/@2x/vebinar2@2x.png);
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 600px;
+    min-height: 540px;
     position: relative;
+    padding: 30px 30px;
 }
 
 .events-item-vebinar2:hover {
@@ -287,7 +290,7 @@ header {
     color: #2B3541;
     line-height: 27px;
     margin: 0;
-    padding: 30px 30px 10px 30px;
+    padding-bottom: 10px;
     opacity: .6;
 }
 
@@ -297,7 +300,7 @@ header {
     line-height: 35px;
     color: #2B3541;
     margin: 0;
-    padding: 10px 30px;
+    padding: 10px 0px;
 }
 
 .events-item-link {
@@ -313,7 +316,6 @@ header {
     box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.28);
     display: block;
     margin-top: 40px;
-    margin-left: 30px;
     text-align: center;
     opacity: 0;
     transition: .3s;
@@ -428,32 +430,32 @@ header {
 
 .schedule-item:nth-child(1) {
     grid-area: a;
-    height: 248px;
+    height: 208px;
 }
 
 .schedule-item:nth-child(2) {
     grid-area: b;
-    height: 400px;
+    height: 360px;
 }
 
 .schedule-item:nth-child(3) {
     grid-area: c;
-    height: 307px;
+    height: 267px;
 }
 
 .schedule-item:nth-child(4) {
     grid-area: d;
-    height: 431px;
+    height: 391px;
 }
 
 .schedule-item:nth-child(5) {
     grid-area: e;
-    height: 279px;
+    height: 239px;
 }
 
 .schedule-item:nth-child(6) {
     grid-area: f;
-    height: 372px;
+    height: 332px;
 }
 
 .schedule-item-active {
@@ -648,8 +650,8 @@ header {
 
 .about {
     max-width: 1143px;
-    margin: 160px auto;
-    padding: 0 20px;
+    margin: 0 auto;
+    padding: 160px 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 168px minmax(97px, 1fr);
@@ -745,9 +747,8 @@ header {
 
 footer {
     width: 100%;
-    min-height: 149px;
     background: #F3F3F3;
-    padding-top: 56px;
+    padding-top: 54px;
 }
 
 .footer-box-links,
@@ -785,10 +786,6 @@ footer {
     color: #2B3541;
 }
 
-.footer-box-links ul > li > a::after {
-    /* display: none; */
-}
-
 .footer-box-links .contacts {
     display: flex;
     justify-content: space-between;
@@ -822,8 +819,8 @@ footer {
 }
 
 .footer-box-links .social > .button {
-    width: 35px;
-    height: 35px;
+    width: 27px;
+    height: 27px;
 }
 
 .footer-box-links .social > .button > .btn-instagram,
@@ -1122,7 +1119,7 @@ footer {
     }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1110px) {
     .schedule-item-icon {
         width: 39px;
         height: 39px;
@@ -1563,7 +1560,7 @@ footer {
     .events-item-maraphon,
     .events-item-vebinar1,
     .events-item-vebinar2 {
-        min-height: 480px;
+        min-height: 440px;
     }
 
     .events-title {
@@ -1574,29 +1571,26 @@ footer {
         margin: 0;
     }
 
+    .events-item-maraphon,
+    .events-item-vebinar1,
+    .events-item-vebinar2 {
+        padding: 20px 20px;
+    }
+
     .events-item-time {
         font-size: 12px;
         line-height: 12px;
-        padding: 20px 0px 0px 20px;
+        padding-top: 20px;
     }
 
     .events-item-text {
         font-size: 16px;
         line-height: 19px;
-        padding: 16px 0px 0px 20px;
+        padding-top: 16px;
     }
 
     .events-item-link {
-        font-size: 12px;
-        line-height: 18px;
-        padding: 20px 0px;
-        width: calc(90% - 20px);
-        margin: 30px 0 0 20px;
-    }
-
-    .events-item-vebinar2 > .events-item-link {
-        margin-left: 20px;
-        width: calc(50% - 60px);
+        display: none;
     }
 
     .events-item-name {
@@ -1898,10 +1892,14 @@ footer {
 }
 
 @media (max-width: 490px) {
+    .events-item-grid {
+        gap: 10px;
+    }
+
     .events-item-maraphon,
     .events-item-vebinar1,
     .events-item-vebinar2 {
-        min-height: 310px;
+        min-height: 270px;
     }
 }
 
@@ -1936,4 +1934,16 @@ footer {
     .events-item-vebinar2 > .events-item-text {
         max-width: 35%;
     }
+}
+
+@media (max-width: 340px) {
+    .events-item-grid {
+        gap: 5px;
+    }
+
+    .events-item-maraphon,
+    .events-item-vebinar1,
+    .events-item-vebinar2 {
+        padding: 10px 10px;
+    }    
 }
