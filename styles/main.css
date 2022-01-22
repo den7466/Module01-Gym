@@ -248,9 +248,8 @@ header {
     background-image: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%), url(../images/@2x/maraphon@2x.png);
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 540px;
+    background-position: bottom -2px center;
     position: relative;
-    padding: 30px 30px;
 }
 
 .events-item-maraphon:hover {
@@ -261,9 +260,8 @@ header {
     background-image: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%), url(../images/@2x/vebinar1@2x.png);
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 540px;
+    background-position: bottom;
     position: relative;
-    padding: 30px 30px;
 }
 
 .events-item-vebinar1:hover {
@@ -275,13 +273,20 @@ header {
     background-image: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%), url(../images/@2x/vebinar2@2x.png);
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 540px;
+    background-position: bottom;
     position: relative;
-    padding: 30px 30px;
 }
 
 .events-item-vebinar2:hover {
     background-image: linear-gradient(180deg, rgba(251, 241, 56, .6) 0%, rgba(253, 249, 182, 0) 100%), url(../images/@2x/vebinar2@2x.png);
+}
+
+.events-item-maraphon,
+.events-item-vebinar1,
+.events-item-vebinar2 {
+    min-height: 540px;
+    overflow: hidden;
+    padding: 30px;
 }
 
 .events-item-time {
@@ -311,10 +316,9 @@ header {
     text-decoration: none;
     text-transform: uppercase;
     padding: 20px 37px;
-    width: 40%;
     background: #2B3541;
     box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.28);
-    display: block;
+    display: inline-flex;
     margin-top: 40px;
     text-align: center;
     opacity: 0;
@@ -1507,6 +1511,56 @@ footer {
         opacity: .6;
     }
 
+    footer {
+        padding-top: 0;
+    }
+
+    .footer-box-links,
+    .footer-box-copyright {
+        padding: 0 10px;
+        margin-bottom: 40px;
+    }
+
+    .footer-box-links {
+        gap: 20px;
+    }
+
+    .footer-box-links .social > .button {
+        width: 27px;
+        height: 27px;
+    }
+
+    .footer-box-links .links ul {
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .footer-box-links ul > li > a {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .footer-box-links .mail-link > a {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .footer-box-links .mail-link::before {
+        width: 20px;
+        height: 20px;
+        left: -6px;
+        bottom: 10px;
+    }
+
+    .footer-box-copyright {
+        gap: 16px;
+    }
+
+    .footer-box-copyright .copyright-item {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
     .mobile-menu {
         padding: 33.5px 20px 20px 20px;
     }
@@ -1756,56 +1810,6 @@ footer {
     .about-link {
         display: block;
         text-align: center;
-    }
-
-    footer {
-        padding-top: 0;
-    }
-
-    .footer-box-links,
-    .footer-box-copyright {
-        padding: 0 10px;
-        margin-bottom: 40px;
-    }
-
-    .footer-box-links {
-        gap: 20px;
-    }
-
-    .footer-box-links .social > .button {
-        width: 27px;
-        height: 27px;
-    }
-
-    .footer-box-links .links ul {
-        justify-content: space-between;
-        gap: 20px;
-    }
-
-    .footer-box-links ul > li > a {
-        font-size: 12px;
-        line-height: 18px;
-    }
-
-    .footer-box-links .mail-link > a {
-        font-size: 12px;
-        line-height: 18px;
-    }
-
-    .footer-box-links .mail-link::before {
-        width: 20px;
-        height: 20px;
-        left: -6px;
-        bottom: 10px;
-    }
-
-    .footer-box-copyright {
-        gap: 16px;
-    }
-
-    .footer-box-copyright .copyright-item {
-        font-size: 10px;
-        line-height: 15px;
     }
 
     .subscribe-pop-up {
