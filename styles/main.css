@@ -226,8 +226,8 @@ header {
 
 .events {
     max-width: 1143px;
-    margin: 160px auto;
-    padding: 0 20px;
+    margin: 0 auto;
+    padding: 160px 20px;
 }
 
 .events-title {
@@ -1162,7 +1162,7 @@ footer {
     .banner-box {
         max-width: 100%;
         padding-top: 100px;
-        padding-bottom: 20px;
+        padding-bottom: 0;
     }
 
     .banner-arrow {
@@ -1226,79 +1226,6 @@ footer {
         flex-basis: 50%;
     }
 }
-
-@media (max-width: 985px) {
-    /* .events {
-        max-width: 100%;
-        margin-bottom: 0;
-    }
-
-    .events-item-grid {
-        max-width: 100%;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: "a b"
-                             "c c";
-    }
-
-    .events-item-maraphon {
-        grid-area: a;
-    }
-
-    .events-item-vebinar1 {
-        grid-area: b;
-    }
-
-    .events-item-vebinar2 {
-        grid-area: c;
-        background-image: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%), url(../images/@2x/vebinar2_m@2x.png);
-    }
-
-    .events-item-vebinar2:hover {
-        background-image: linear-gradient(180deg, rgba(251, 241, 56, .6) 0%, rgba(253, 249, 182, 0) 100%), url(../images/@2x/vebinar2_m@2x.png);
-    }
-
-    .events-item-vebinar2 > .events-item-link {
-        margin-left: 30px;
-        width: 25%;
-    }
-
-    .events-item-name {
-        right: auto;
-        left: 0;
-    }
-
-    .events-item-vebinar2 > .events-item-text {
-        max-width: 30%;
-    }
-
-    .events-item-link-m {
-        display: block;
-        width: 47px;
-        height: 47px;
-        border: 0;
-        background-image: url(../images/icons/more.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: #2B3541;
-        color: #FBF138;
-        cursor: pointer;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-    }
-
-    .events-item-maraphon:hover .events-item-link,
-    .events-item-vebinar1:hover .events-item-link,
-    .events-item-vebinar2:hover .events-item-link {
-        opacity: 0;
-    }
-
-    .events-item-maraphon:hover .events-item-name,
-    .events-item-vebinar1:hover .events-item-name,
-    .events-item-vebinar2:hover .events-item-name {
-        opacity: 1;
-     } */
-} 
 
 @media (max-width: 936px) {
     .banner-description {
@@ -1364,8 +1291,63 @@ footer {
         transform: scale(1);
     }
 
+    .events {
+        padding-top: 80px;
+        padding-bottom: 0;
+    }
+
+    .events-title {
+        margin-top: 0;
+    }
+
     .events-item-grid {
-        min-height: 460px;
+        min-height: 430px;
+    }
+
+    .events-title {
+        padding-bottom: 20px;
+        font-size: 26px;
+        line-height: 32px;
+        margin: 0;
+    }
+
+    .events-item-maraphon,
+    .events-item-vebinar1,
+    .events-item-vebinar2 {
+        padding: 20px;
+    }
+
+    .events-item-time {
+        font-size: 12px;
+        line-height: 12px;
+        padding-bottom: 0;
+    }
+
+    .events-item-text {
+        font-size: 16px;
+        line-height: 19px;
+        padding-top: 16px;
+        padding-bottom: 0;
+    }
+
+    .events-item-link {
+        font-size: 12px;
+        line-height: 1.5;
+        padding: 14px 25px;
+    }
+
+    .events-item-name {
+        font-size: 12px;
+        line-height: 18px;
+        padding: 7px 16px;
+        right: auto;
+        left: 0;
+    }
+
+    .events-item-maraphon:hover .events-item-name,
+    .events-item-vebinar1:hover .events-item-name,
+    .events-item-vebinar2:hover .events-item-name {
+        opacity: 1;
     }
 
     .schedule-item-grid {
@@ -1562,52 +1544,39 @@ footer {
     }
 
     .events {
-        padding: 0 10px;
-        margin-top: 20px;
+        max-width: 100%;
+        padding: 80px 10px 0;
     }
-    
-    .events-item-maraphon,
-    .events-item-vebinar1,
+
+    .events-item-grid {
+        max-width: 100%;
+        min-height: 920px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "a b"
+                             "c c";
+    }
+
+    .events-item-maraphon {
+        grid-area: a;
+    }
+
+    .events-item-vebinar1 {
+        grid-area: b;
+    }
+
     .events-item-vebinar2 {
-        min-height: 440px;
+        grid-area: c;
+        background-image: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%), url(../images/@2x/vebinar2_m@2x.png);
+        background-position: top center;
     }
 
-    .events-title {
-        padding-top: 80px;
-        padding-bottom: 20px;
-        font-size: 26px;
-        line-height: 32px;
-        margin: 0;
-    }
-
-    .events-item-maraphon,
-    .events-item-vebinar1,
-    .events-item-vebinar2 {
-        padding: 20px 20px;
-    }
-
-    .events-item-time {
-        font-size: 12px;
-        line-height: 12px;
-        padding-top: 20px;
-    }
-
-    .events-item-text {
-        font-size: 16px;
-        line-height: 19px;
-        padding-top: 16px;
+    .events-item-vebinar2:hover {
+        background-image: linear-gradient(180deg, rgba(251, 241, 56, .6) 0%, rgba(253, 249, 182, 0) 100%), url(../images/@2x/vebinar2_m@2x.png);
     }
 
     .events-item-link {
         display: none;
-    }
-
-    .events-item-name {
-        font-size: 12px;
-        line-height: 18px;
-        padding: 7px 16px;
-        right: auto;
-        left: 0;
     }
 
     .events-item-link-m {
@@ -1915,6 +1884,10 @@ footer {
 }
 
 @media (max-width: 410px) {
+    .events-item-grid {
+        min-height: 650px;
+    }
+    
     .schedule-item-main-description {
         margin-top: 0;
     }
