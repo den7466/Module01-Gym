@@ -188,6 +188,7 @@ header {
 }
 
 .banner-link {
+    display: inline-flex;
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -284,7 +285,7 @@ header {
 .events-item-maraphon,
 .events-item-vebinar1,
 .events-item-vebinar2 {
-    min-height: 540px;
+    min-height: calc(100% - 60px);
     overflow: hidden;
     padding: 30px;
 }
@@ -1121,22 +1122,22 @@ footer {
     }
 }
 
-@media (max-width: 1408px) {
+@media (max-width: 1392px) {
     .banner-img {
         right: 0;
     }
-}
 
-@media (max-width: 1230px) {
     .banner-title {
         font-size: 38px;
         line-height: 1.5;
     }
-}
 
-@media (max-width: 1140px) {
     .banner-text-box {
         margin: 0;
+    }
+
+    .banner-bg {
+        right: 20px;
     }
 }
 
@@ -1157,57 +1158,23 @@ footer {
     }
 }
 
-@media (max-width: 1050px) {
-    .banner {
-        max-width: 100%;
-    }
-
+@media (max-width: 1106px) {
     .banner-box {
         max-width: 100%;
-        padding-top: 20px;
+        padding-top: 100px;
         padding-bottom: 20px;
-    }
-
-    .banner-description {
-        max-width: 60%;
-        margin: 0 auto;
-    }
-
-    .banner-link {
-        margin: 40px 0;
-        width: 100%;
-        padding: 20px 0;
-        text-align: center;
-        display: block;
     }
 
     .banner-arrow {
         display: none;
     }
 
-    .banner-bg {
-        position: relative;
-        width: 100%;
-        height: 610px;
-        top: 0;
-        right: 0;
-        gap: 5vw;
-    }
-
     .banner-gradient-left {
-        width: 65vw;
+        width: 50vw;
     }
 
     .banner-gradient-right {
-        width: 30vw;
-    }
-
-    .banner-img {
-        width: 100%;
-        height: 100%;
-        top: 0;
-        right: 0;
-        background-position: bottom center;
+        width: 15vw;
     }
 }
 
@@ -1261,7 +1228,7 @@ footer {
 }
 
 @media (max-width: 985px) {
-    .events {
+    /* .events {
         max-width: 100%;
         margin-bottom: 0;
     }
@@ -1330,12 +1297,30 @@ footer {
     .events-item-vebinar1:hover .events-item-name,
     .events-item-vebinar2:hover .events-item-name {
         opacity: 1;
-    }
-}
+     } */
+} 
 
-@media (max-width: 891px) {
+@media (max-width: 936px) {
     .banner-description {
-        max-width: 80%;
+        max-width: 50vw;
+    }
+    
+    .banner-title {
+        font-size: 26px;
+        line-height: 32px;
+        letter-spacing: 0;
+    }
+
+    .banner-count {
+        font-size: 26px;
+        line-height: 32px;
+        margin-top: 14px;
+    }
+
+    .banner-text {
+        margin: 16px 0 40px 0;
+        font-size: 16px;
+        line-height: 24px;
     }
 }
 
@@ -1346,7 +1331,7 @@ footer {
 
     header {
         max-width: 100%;
-        padding: 30px 20px 60px;
+        padding: 30px 20px 27px;
     }
     
     header .logo {
@@ -1368,10 +1353,6 @@ footer {
         height: 26px;
     }
 
-    .banner-bg {
-        height: 410px;
-    }
-
     .social .btn-instagram,
     .social .btn-facebook {
         width: 26px;
@@ -1383,78 +1364,20 @@ footer {
         transform: scale(1);
     }
 
-    .schedule {
-        max-width: 100%;
-    }
-
-    .schedule-calendar {
-        opacity: .7;
+    .events-item-grid {
+        min-height: 460px;
     }
 
     .schedule-item-grid {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-areas: "a"
-                             "b"
-                             "c"
-                             "d"
-                             "e"
-                             "f";
-        gap: 20px;
-    }
-
-    .schedule-item:nth-child(1) {
-        grid-area: a;
-    }
-
-    .schedule-item:nth-child(2) {
-        grid-area: c;
-    }
-
-    .schedule-item:nth-child(3) {
-        grid-area: e;
-    }
-
-    .schedule-item:nth-child(4) {
-        grid-area: b;
-    }
-
-    .schedule-item:nth-child(5) {
-        grid-area: d;
-    }
-
-    .schedule-item:nth-child(6) {
-        grid-area: f;
+        grid-template-areas: "a b"
+                             "d c"
+                             "e f";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 391px);
     }
 
     .schedule-item {
         height: auto!important;
-        min-height: 158px;
-    }
-
-    .schedule-item:hover {
-        box-shadow: none;
-        border: 1px solid rgba(43, 53, 65, .5);
-    }
-
-    .schedule-item-main-description {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 24px;
-        margin-top: 40px;
-    }
-
-    .schedule-item-icon {
-        margin-bottom: 0;
-    }
-
-    .schedule-item-text {
-        margin-top: 20px;
-    }
-
-    .schedule-item-active .schedule-item-main-description {
-        margin-top: 100px;
     }
 
     .about {
@@ -1578,6 +1501,56 @@ footer {
     }
 }
 
+@media (max-width: 714px) {
+    .banner-box {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 53px;
+    }
+    
+    .banner-description {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .banner-text-box {
+        max-width: 100%;
+    }
+
+    .banner-link {
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+        display: block;
+    }
+
+    .banner-bg {
+        position: relative;
+        width: 100%;
+        height: 330px;
+        top: 0;
+        right: 0;
+        gap: 5vw;
+        margin-top: 40px;
+    }
+
+    .banner-gradient-left {
+        width: 55vw;
+    }
+
+    .banner-gradient-right {
+        width: 35vw;
+    }
+
+    .banner-img {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background-position: bottom center;
+    }
+}
+
 @media (max-width: 695px) {
     header {
         padding-left: 10px;
@@ -1586,41 +1559,6 @@ footer {
     
     header .links {
         flex-basis: 20%;
-    }
-
-    .banner-description {
-        max-width: 60%;
-        margin: 0;
-    }
-    
-    .banner-box {
-        padding: 0 10px;
-    }
-
-    .banner-title {
-        font-size: 26px;
-        line-height: 32px;
-        letter-spacing: 0;
-    }
-
-    .banner-count {
-        font-size: 26px;
-        line-height: 32px;
-        margin-top: 14px;
-    }
-
-    .banner-text {
-        margin: 16px 0 0 0;
-        font-size: 16px;
-        line-height: 24px;
-    }
-
-    .banner-link {
-        margin: 40px 0;
-        width: 100%;
-        padding: 20px 0;
-        text-align: center;
-        display: block;
     }
 
     .events {
@@ -1689,6 +1627,7 @@ footer {
     }
 
     .schedule {
+        max-width: 100%;
         padding: 0px 10px;
         margin-top: 80px;
         margin-bottom: 80px;
@@ -1706,8 +1645,59 @@ footer {
         flex-basis: 130px;
     }
 
+    .schedule-item-grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "a"
+                             "b"
+                             "c"
+                             "d"
+                             "e"
+                             "f";
+        gap: 20px;
+    }
+
+    .schedule-item:nth-child(1) {
+        grid-area: a;
+    }
+
+    .schedule-item:nth-child(2) {
+        grid-area: c;
+    }
+
+    .schedule-item:nth-child(3) {
+        grid-area: e;
+    }
+
+    .schedule-item:nth-child(4) {
+        grid-area: b;
+    }
+
+    .schedule-item:nth-child(5) {
+        grid-area: d;
+    }
+
+    .schedule-item:nth-child(6) {
+        grid-area: f;
+    }
+
     .schedule-item {
+        height: auto!important;
+        min-height: 158px;
         padding: 20px 20px;
+    }
+
+    .schedule-item:hover {
+        box-shadow: none;
+        border: 1px solid rgba(43, 53, 65, .5);
+    }
+
+    .schedule-item-main-description {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 24px;
+        margin-top: 40px;
     }
 
     .schedule-item-calendar {
@@ -1716,6 +1706,7 @@ footer {
     }
 
     .schedule-item-icon {
+        margin-bottom: 0;
         width: 34px;
         height: 53px;
     }
@@ -1723,7 +1714,12 @@ footer {
     .schedule-item-text {
         font-size: 16px;
         line-height: 20px;
+        margin-top: 20px;
         margin-bottom: 0;
+    }
+
+    .schedule-item-active .schedule-item-main-description {
+        margin-top: 100px;
     }
 
     .schedule-item-description {
@@ -1885,12 +1881,6 @@ footer {
     }
 }
 
-@media (max-width: 588px) {
-    .banner-description {
-        max-width: 80%;
-    }
-}
-
 @media (max-width: 524px) {
     .subscribe-pop-up-title {
         max-width: min-content;
@@ -1921,22 +1911,6 @@ footer {
     .events-item-vebinar1,
     .events-item-vebinar2 {
         min-height: 270px;
-    }
-}
-
-@media (max-width: 450px) {
-    .banner-description {
-        max-width: 100%;
-    }
-
-    .banner-text-box {
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 414px) {
-    .banner-bg {
-        height: 310px;
     }
 }
 
